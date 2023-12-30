@@ -1,22 +1,99 @@
 body{
     display: flex;
     margin: 0;
+    box-sizing: border-box;
 }
+
+.fixed {
+    width: 40%;
+}
+
 .image_div{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     width: 40%;
     overflow: hidden;
+    position: fixed;
 }
 
 .image_div img {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
 }
 
 .form_div{
     width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro p{
+     text-align: center;
+     margin-bottom: 40px ;
+}
+
+.intro{
+    height: 30%;
+    width: 70%;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 2.2vmin;
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom:10px solid rgb(176, 80, 6);
+}
+
+form{
+    margin: auto;
+    font-family:'Courier New', Courier, monospace;
+    width: 70%;
+    font-size: 2vmin;
+}
+
+.content{
+    display: flex;
+    gap: 40px;
+    
+}
+
+.left, .right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 45%;
+}
+
+.left p, .right p{
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 10px; 
+    box-sizing: border-box;
+    height: 35px;
+    border: 3px solid #6c6c6c;
+    border-radius: 5px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.15vmin;
+    color: rgb(84, 84, 84);
+}
+
+button{
+    margin-top: 50px ;
+    height: 40px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    background-color: #eae0c9;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: rgb(148, 84, 10);
 }
